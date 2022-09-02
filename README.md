@@ -1,1 +1,0 @@
-# giridharan-sankar.github.io
