@@ -3,16 +3,6 @@ layout: default
 title: Projects
 ---
 
-<header>
-    <h1>Giridharan Sankar</h1>
-    <p>Physics | IISER Pune</p>
-</header>
-<nav>
-    <a href="{{ '/' | absolute_url }}">Home</a>
-    <a href="{{ '/projects' | absolute_url }}">Projects</a>
-    <a href="{{ '/assets/cv/CV.pdf' | absolute_url }}" target="_blank">CV</a>
-    <a href="{{ '/contact' | absolute_url }}">Contact</a>
-</nav>
 <main>
     <h2>Projects</h2>
     <ul>
@@ -33,6 +23,3 @@ title: Projects
         </li>
     </ul>
 </main>
-<footer>
-    <p>&copy; 2024 Giridharan Sankar. All rights reserved.</p>
-</footer>
