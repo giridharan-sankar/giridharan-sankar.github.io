@@ -3,14 +3,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9; /* Light background color for contrast */
 }
 
 /* Header styling */
 header {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Custom color */
     color: white;
     text-align: center;
     padding: 1em 0;
+    border-bottom: 1px solid #ddd; /* Light border for separation */
 }
 
 /* Navigation styling */
@@ -22,28 +24,53 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #4CAF50;
+    color: #4CAF50; /* Custom color */
     font-weight: bold;
+    padding: 5px 10px; /* Add padding for better clickability */
 }
 
 /* Main content styling */
 main {
     padding: 2em;
+    max-width: 800px; /* Restrict max width for readability */
+    margin: 0 auto; /* Center content */
+    background-color: #ffffff; /* White background for main content */
+    border-radius: 8px; /* Rounded corners for content box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
 }
 
 /* Footer styling */
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /* Custom color */
+    border-top: 1px solid #ddd; /* Light border for separation */
 }
 
 /* Emphasized text styling (for project dates) */
 em {
-    color: #666;
+    color: #666; /* Gray color for dates */
     font-style: normal;
     display: block;
     margin-top: 5px;
-    margin-bottom: 15px; /* Add bottom margin for spacing */
-    font-size: 0.9em;
+    margin-bottom: 15px; /* Space below dates */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+/* Additional styles to match the theme */
+h1, h2 {
+    color: #333; /* Dark color for headings */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+ul {
+    list-style: none; /* Remove bullets from lists */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px; /* Space between list items */
 }
