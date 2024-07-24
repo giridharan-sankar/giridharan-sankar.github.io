@@ -44,5 +44,6 @@ em {
     font-style: normal;
     display: block;
     margin-top: 5px;
+    margin-bottom: 15px; /* Add bottom margin for spacing */
     font-size: 0.9em;
 }
