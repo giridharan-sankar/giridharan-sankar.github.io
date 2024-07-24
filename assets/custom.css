@@ -35,6 +35,35 @@ body {
     margin-top: 0;
 }
 
+/* Social links styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+/* SVG icons */
+.social-links img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    transition: filter 0.3s ease; /* Smooth color transition */
+}
+
+/* Dark mode icon colors */
+[data-theme='dark'] .social-links img {
+    filter: invert(1); /* Invert colors for dark mode */
+}
+
+/* Light mode icon colors */
+[data-theme='light'] .social-links img {
+    filter: invert(0); /* Default colors for light mode */
+}
+
 /* Page transition effect */
 main {
     flex: 1; /* Pushes footer to the bottom */
