@@ -1,17 +1,32 @@
 /* General styling for the website */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 /* Header styling */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
     text-align: center;
     padding: 1em 0;
+    position: relative;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--icon-color);
 }
 
 /* Navigation styling */
@@ -23,27 +38,28 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #4CAF50;
+    color: var(--text-color);
     font-weight: bold;
 }
 
 /* Main content styling */
 main {
-    max-width: 800px; /* Set a max width for the content */
-    margin: 0 auto; /* Center the content */
     padding: 2em;
+    max-width: 800px; /* Center content and limit width */
+    margin: 0 auto;
 }
 
 /* Footer styling */
 footer {
     text-align: center;
-    padding: 1em 0;
-    background-color: #f1f1f1;
+    padding: 0.5em 0; /* Reduced padding for smaller footer */
+    background-color: var(--footer-background-color);
+    font-size: 0.8em; /* Smaller font size for copyright text */
 }
 
 /* Emphasized text styling (for project dates) */
 em {
-    color: #666;
+    color: var(--emphasized-text-color);
     font-style: normal;
     display: block;
     margin-top: 5px;
@@ -51,34 +67,26 @@ em {
     font-size: 0.9em;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    main {
-        padding: 1em;
-        max-width: 95%; /* Adjust max width for smaller screens */
-    }
+/* Default light mode styles */
+[data-theme="light"] {
+    --text-color: #333;
+    --background-color: #fff;
+    --header-background-color: #4CAF50;
+    --header-text-color: #fff;
+    --footer-background-color: #f1f1f1;
+    --border-color: #ddd;
+    --emphasized-text-color: #666;
+    --icon-color: #333;
 }
 
-@media (max-width: 480px) {
-    header {
-        font-size: 1.2em; /* Adjust header font size for smaller screens */
-        padding: 0.8em 0;
-    }
-
-    nav a {
-        font-size: 1em; /* Adjust font size for navigation links */
-    }
-
-    main {
-        padding: 0.5em;
-    }
-
-    footer {
-        font-size: 0.8em; /* Adjust footer font size */
-    }
+/* Dark mode styles */
+[data-theme="dark"] {
+    --text-color: #eaeaea;
+    --background-color: #121212;
+    --header-background-color: #333;
+    --header-text-color: #eaeaea;
+    --footer-background-color: #1f1f1f;
+    --border-color: #444;
+    --emphasized-text-color: #999;
+    --icon-color: #eaeaea;
 }
