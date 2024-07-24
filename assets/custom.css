@@ -6,11 +6,6 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and color transitions */
 }
 
-/* Ensure body has background color while loading */
-body:not(.loaded) {
-    background-color: #f4f4f4;
-}
-
 /* Page transition effect */
 main {
     opacity: 0;

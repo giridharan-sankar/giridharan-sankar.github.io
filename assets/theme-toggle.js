@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggleButton = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
+    const themeIcon = document.getElementById('theme-icon') || themeToggleButton;
 
     // Load saved theme preference from localStorage
     if (localStorage.getItem('theme') === 'dark') {
@@ -24,7 +24,4 @@ document.addEventListener('DOMContentLoaded', () => {
             themeIcon.textContent = '🌜'; // Dark mode icon
         }
     });
-
-    // Add 'loaded' class to body to trigger fade-in effect
-    document.body.classList.add('loaded');
 });
