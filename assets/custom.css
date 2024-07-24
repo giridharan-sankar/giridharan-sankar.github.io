@@ -3,6 +3,17 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and color transitions */
+}
+
+/* Page transition effect */
+main {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded main {
+    opacity: 1;
 }
 
 /* Dark and light theme styles */
@@ -49,6 +60,11 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #333; /* Change this to any color you like */
 }
 
 /* Main content styling */
