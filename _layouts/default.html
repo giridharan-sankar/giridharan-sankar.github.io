@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <title>{{ page.title | escape }}</title>
+    <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
 </head>
 <body>
     <header>
@@ -12,10 +12,10 @@
         <p>Physics | IISER Pune</p>
     </header>
     <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/projects' | relative_url }}">Projects</a>
-        <a href="/assets/cv/CV.pdf" target="_blank">CV</a>
-        <a href="{{ '/contact' | relative_url }}">Contact</a>
+        <a href="{{ '/' | absolute_url }}">Home</a>
+        <a href="{{ '/projects' | absolute_url }}">Projects</a>
+        <a href="{{ '/assets/cv/CV.pdf' | absolute_url }}" target="_blank">CV</a>
+        <a href="{{ '/contact' | absolute_url }}">Contact</a>
     </nav>
     <main>
         {{ content }}
