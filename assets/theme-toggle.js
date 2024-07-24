@@ -1,8 +1,6 @@
-// theme-toggle.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggleButton = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
+    const themeIcon = document.getElementById('theme-icon') || themeToggleButton;
 
     // Load saved theme preference from localStorage
     if (localStorage.getItem('theme') === 'dark') {

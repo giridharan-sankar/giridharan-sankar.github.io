@@ -6,15 +6,15 @@
     <title>{{ page.title | escape }}</title>
     <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}"> <!-- Include the theme stylesheet -->
-    <link rel="icon" href="{{ '/assets/planet.png' | relative_url }}" type="image/png">
+    <link rel="icon" href="{{ '/assets/image/planet.png' | relative_url }}" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
     <header>
         <h1>Giridharan Sankar</h1>
         <p>Physics | IISER Pune</p>
-        <!-- Theme Toggle Button -->
-        <button id="theme-toggle" aria-label="Toggle dark/light theme">
-            <span id="theme-icon">🌞</span> <!-- You can use an icon or text -->
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <span id="theme-icon">🌞</span> <!-- Default icon -->
         </button>
     </header>
     <nav>
@@ -29,5 +29,6 @@
     <footer>
         <p>&copy; 2024 Giridharan Sankar. All rights reserved.</p>
     </footer>
+    <script src="{{ "/assets/theme-toggle.js" | relative_url }}"></script>
 </body>
 </html>
