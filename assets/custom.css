@@ -3,6 +3,8 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4; /* Default to light background */
+    color: #333; /* Default to light text color */
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and color transitions */
 }
 

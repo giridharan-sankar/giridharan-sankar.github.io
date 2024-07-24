@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
     <link rel="icon" href="{{ '/assets/image/planet.png' | relative_url }}" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>    
 </head>
 <body>
     <header>
