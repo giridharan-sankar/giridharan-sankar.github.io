@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Giridharan Sankar</h1>
+        <p>Physics | IISER Pune</p>
+    </header>
+    <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/projects' | relative_url }}">Projects</a>
+        <a href="/assets/cv/CV.pdf" target="_blank">CV</a>
+        <a href="{{ '/contact' | relative_url }}">Contact</a>
+    </nav>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>&copy; 2024 Giridharan Sankar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
