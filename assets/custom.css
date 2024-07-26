@@ -23,12 +23,13 @@ body {
 
 /* Profile picture styling */
 .profile-picture {
-    border-radius: 80%;
-    width: 300px; /* Increased by 30% from 150px */
-    height: 300px; /* Increased by 30% from 150px */
+    border-radius: 50%;
+    width: 300px !important; /* Force size */
+    height: 300px !important; /* Force size */
     object-fit: cover;
     margin-right: 20px;
 }
+
 
 /* Content styling */
 .profile-content h2 {
