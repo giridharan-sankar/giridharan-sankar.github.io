@@ -24,8 +24,8 @@ body {
 /* Profile picture styling */
 .profile-picture {
     border-radius: 50%;
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
+    width: 195px; /* Increased by 30% from 150px */
+    height: 195px; /* Increased by 30% from 150px */
     object-fit: cover;
     margin-right: 20px;
 }
