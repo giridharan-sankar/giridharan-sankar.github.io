@@ -31,8 +31,12 @@ body {
 }
 
 /* Content styling */
-.profile-content h2 {
-    margin-top: 0;
+.profile-content {
+    margin-left: 20px; /* Add margin to align with the image */
+}
+
+.profile-content-separate {
+    margin-left: 0; /* Reset margin for separate profile content */
 }
 
 /* Social links styling */
