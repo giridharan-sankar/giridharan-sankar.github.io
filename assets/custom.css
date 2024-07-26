@@ -2,7 +2,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Changed to Helvetica */
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and color transitions */
 }
 
