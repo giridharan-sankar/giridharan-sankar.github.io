@@ -23,7 +23,7 @@ body {
 
 /* Profile picture styling */
 .profile-picture {
-    border-radius: 50%;
+    border-radius: 80%;
     width: 300px; /* Increased by 30% from 150px */
     height: 300px; /* Increased by 30% from 150px */
     object-fit: cover;
