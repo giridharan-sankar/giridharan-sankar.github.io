@@ -22,6 +22,12 @@ body {
     margin: 20px 0;
 }
 
+/* Wrapper for image and first paragraph */
+.image-paragraph-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 /* Profile picture styling */
 .profile-picture {
     border-radius: 50%;
@@ -29,24 +35,15 @@ body {
     height: 150px; /* Adjust as needed */
     object-fit: cover;
     margin-right: 20px;
-    float: left; /* Ensures the image is next to the first paragraph */
-}
-
-/* Image and first paragraph wrapper */
-.image-paragraph-wrapper {
-    display: flex;
-    align-items: flex-start;
 }
 
 /* Content styling */
-.profile-content {
-    margin-top: 20px; /* Add spacing from the first paragraph */
+.profile-content h2 {
+    margin-top: 0;
 }
 
 .profile-content p {
-    margin: 0; /* Remove default margin */
-    margin-bottom: 1em; /* Add bottom margin for spacing */
-    text-indent: 20px; /* Indent for subsequent paragraphs */
+    margin-top: 0;
 }
 
 /* Social links styling */
@@ -167,8 +164,15 @@ em {
     font-size: 0.9em;
 }
 
-/* Styling visited links */
+/* Unvisited, visited, and hover link states */
+a:link {
+    color: #4CAF50;
+}
+
 a:visited {
-    color: inherit; /* Keep the original color */
-    text-decoration: underline; /* Optional: Add underline to indicate it's visited */
+    color: #4CAF50;
+}
+
+a:hover {
+    color: #f11717;
 }

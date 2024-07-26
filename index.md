@@ -6,9 +6,11 @@ title: Home
 <main>
     <div class="profile-container">
         <div class="image-paragraph-wrapper">
-            <h2>Hello!</h2>
             <img src="{{ '/assets/images/profile-photo.jpg' | relative_url }}" alt="Giridharan Sankar" class="profile-picture">
-            <p>I am Giridharan Sankar, a final year BS-MS student in the <a href="https://www.iiserpune.ac.in/research/department/physics">Department of Physics</a>, at the <a href="https://www.iiserpune.ac.in/">Indian Institute of Science Education and Research (IISER), Pune</a>. I am interested in astrophysics; in particular, exoplanetary atmospheres and star formation theory. I am currently doing my masters' thesis on protostellar outflows at the <a href="https://www.asiaa.sinica.edu.tw/">Institute of Astronomy and Astrophysics, Academia Sinica (ASIAA)</a>.</p>
+            <div>
+                <h2>Hello!</h2>
+                <p>I am Giridharan Sankar, a final year BS-MS student in the <a href="https://www.iiserpune.ac.in/research/department/physics">Department of Physics</a>, at the <a href="https://www.iiserpune.ac.in/">Indian Institute of Science Education and Research (IISER), Pune</a>. I am interested in astrophysics; in particular, exoplanetary atmospheres and star formation theory. I am currently doing my masters' thesis on protostellar outflows at the <a href="https://www.asiaa.sinica.edu.tw/">Institute of Astronomy and Astrophysics, Academia Sinica (ASIAA)</a>.</p>
+            </div>
         </div>
         <div class="profile-content">
             <p>Thanks to this little switch from studying the atmospheres of exoplanets to working on understanding nascent stages of stars, I have come to appreciate the complex interplay between physics, mathematics and chemistry, especially in the context of modelling outflows and circumstellar disk evolution, on top of my admiration for climate science garnered through my projects in the past couple of years. In a field like astronomy, where we have to rely mostly on observations (as opposed to repeatable experiments, which are fairly common in many fields of science), gaining a deep understanding of the models and their parameter spaces is imperative. It is also the reason why I am excited about this field, as new observations with better instruments have a tendency to chip away at the seemingly well crystallized theories of astronomy.</p>
