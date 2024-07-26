@@ -17,23 +17,34 @@ body {
 /* Container for profile image and content */
 .profile-container {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stack profile image and text vertically */
+    align-items: flex-start; /* Align items to the start of the container */
     margin: 20px 0;
+}
+
+/* Profile image and text wrapper */
+.image-paragraph-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 /* Profile picture styling */
 .profile-picture {
     border-radius: 50%;
-    width: 300px !important; /* Force size */
-    height: 300px !important; /* Force size */
+    width: 300px; /* Adjust size */
+    height: 300px; /* Adjust size */
     object-fit: cover;
     margin-right: 20px;
 }
 
+/* Text next to profile picture */
+.profile-text {
+    max-width: 600px; /* Adjust max-width as needed */
+}
 
 /* Content styling */
-.profile-content h2 {
-    margin-top: 0;
+.profile-content p {
+    margin: 0; /* Remove default margin for paragraphs */
 }
 
 /* Social links styling */
@@ -152,17 +163,4 @@ em {
     margin-top: 5px;
     margin-bottom: 15px; /* Add bottom margin for spacing */
     font-size: 0.9em;
-}
-
-/* Unvisited, visited, and hover link states */
-a:link {
-    color: #4CAF50;
-}
-
-a:visited {
-    color: #4CAF50;
-}
-
-a:hover {
-    color: #f11717;
 }
