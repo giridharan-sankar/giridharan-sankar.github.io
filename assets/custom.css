@@ -152,3 +152,9 @@ em {
     margin-bottom: 15px; /* Add bottom margin for spacing */
     font-size: 0.9em;
 }
+
+/* Styling visited links */
+a:visited {
+    color: inherit; /* Keep the original color */
+    text-decoration: underline; /* Optional: Add underline to indicate it's visited */
+}
