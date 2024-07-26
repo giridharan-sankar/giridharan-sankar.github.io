@@ -17,7 +17,7 @@ body {
 /* Container for profile image and content */
 .profile-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 20px 0;
 }
 
@@ -32,11 +32,12 @@ body {
 
 /* Content styling */
 .profile-content {
-    margin-left: 20px; /* Add margin to align with the image */
+    flex: 1;
 }
 
-.profile-content-separate {
-    margin-left: 0; /* Reset margin for separate profile content */
+.profile-content p {
+    margin: 0; /* Remove default margin */
+    margin-bottom: 1em; /* Add bottom margin for spacing */
 }
 
 /* Social links styling */
