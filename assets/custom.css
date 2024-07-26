@@ -16,35 +16,44 @@ body {
 
 /* Container for profile image and content */
 .profile-container {
-    display: flex;
-    flex-direction: column; /* Stack profile image and text vertically */
-    align-items: flex-start; /* Align items to the start of the container */
-    margin: 20px 0;
+    margin: 20px;
 }
 
-/* Profile image and text wrapper */
+/* Wrapper for image and first paragraph */
 .image-paragraph-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align items at the start */
+    margin-bottom: 20px; /* Add space below the image-paragraph-wrapper */
 }
 
-/* Profile picture styling */
-.profile-picture {
-    border-radius: 50%;
-    width: 300px; /* Adjust size */
-    height: 300px; /* Adjust size */
-    object-fit: cover;
-    margin-right: 20px;
+.image-paragraph-wrapper img {
+    margin-right: 20px; /* Space between image and text */
+    max-width: 150px; /* Ensure image doesn’t exceed a certain width */
+    height: auto;
 }
 
-/* Text next to profile picture */
-.profile-text {
-    max-width: 600px; /* Adjust max-width as needed */
+.image-paragraph-wrapper h2 {
+    margin-top: 0;
+    margin-bottom: 0; /* Remove default bottom margin */
+}
+
+.image-paragraph-wrapper p {
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 1em; /* Add space between paragraphs */
 }
 
 /* Content styling */
+.profile-content {
+    margin-left: 170px; /* Offset to align with the image and first paragraph */
+}
+
+.profile-content h2 {
+    margin-top: 0;
+}
+
 .profile-content p {
-    margin: 0; /* Remove default margin for paragraphs */
+    margin-top: 0;
+    margin-bottom: 1em; /* Add space between paragraphs */
 }
 
 /* Social links styling */
@@ -163,4 +172,17 @@ em {
     margin-top: 5px;
     margin-bottom: 15px; /* Add bottom margin for spacing */
     font-size: 0.9em;
+}
+
+/* Unvisited, visited, and hover link states */
+a:link {
+    color: #4CAF50;
+}
+
+a:visited {
+    color: #4CAF50;
+}
+
+a:hover {
+    color: #f11717;
 }
