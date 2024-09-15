@@ -23,6 +23,6 @@ title: Projects
         </li>
     </ul>
     <div class="cv-container">
-            <iframe src="{{ '/assets/CV.pdf' | relative_url }}" title="CV" width="100%" height="500px" style="border: none;"></iframe>
+            <iframe src="{{ '/assets/cv/CV.pdf' | relative_url }}" title="CV" width="100%" height="500px" style="border: none;"></iframe>
     </div>
 </main>
