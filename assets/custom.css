@@ -1,167 +1,181 @@
-/* General styling for the website */
-html, body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Changed to Helvetica */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and color transitions */
-}
-
-/* Wrapper to ensure footer sticks to the bottom */
+/* Base styling for the body, using Helvetica */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: 'Helvetica', sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Container for profile image and content */
+/* General container settings */
 .profile-container {
     display: flex;
     flex-direction: column;
-    margin: 20px; /* Add margin for spacing around the container */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
-/* Image and paragraph wrapper */
+/* Styling the profile image */
+.profile-picture {
+    max-width: 100%;
+    width: 200px; /* Adjust size to make it responsive */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Wrapper for image and first paragraph */
 .image-paragraph-wrapper {
     display: flex;
-    align-items: flex-start; /* Align items at the top */
-    margin-bottom: 20px; /* Space below the image-text wrapper */
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
 }
 
-/* Profile picture styling */
-.profile-picture {
-    border-radius: 50%;
-    width: 234px; /* Increase size of image */
-    height: 234px; /* Increase size of image */
-    object-fit: cover;
-    margin-right: 20px; /* Space between image and text */
-    flex-shrink: 0; /* Prevent the image from shrinking */
+/* Style for content next to the profile picture */
+.profile-content {
+    max-width: 100%;
+    padding-left: 20px;
 }
 
-/* Profile text styling */
-.profile-text {
-    flex: 1; /* Allow text to take up the remaining space */
+/* Styling h2 headers */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-/* Content styling */
-.profile-text h2 {
-    margin-top: 0;
+/* General paragraph styling */
+p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    text-align: justify;
 }
 
-/* Social links styling */
+/* Link styling */
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005f99;
+    text-decoration: underline;
+}
+
+/* Social media links */
 .social-links {
     display: flex;
     justify-content: center;
-    margin: 2em 0; /* Space above the footer */
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
 
 .social-links a {
-    margin: 0 15px; /* Increased margin for spacing */
-    display: inline-block;
+    transition: transform 0.2s ease;
 }
 
-/* SVG icons */
-.social-links img {
-    width: 32px; /* Increase size of icons */
-    height: 32px; /* Increase size of icons */
-    transition: filter 0.3s ease; /* Smooth color transition */
+.social-links a:hover {
+    transform: scale(1.1);
 }
 
-/* Dark mode icon colors */
-[data-theme='dark'] .social-links img {
-    filter: invert(1); /* Invert colors for dark mode */
+/* Making the page responsive */
+@media (max-width: 767px) {
+    .profile-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .image-paragraph-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin-bottom: 15px;
+        width: 180px;
+    }
+
+    .profile-content {
+        padding: 0;
+        text-align: center;
+    }
+
+    p {
+        padding: 0 15px;
+        text-align: justify;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
 }
 
-/* Light mode icon colors */
-[data-theme='light'] .social-links img {
-    filter: invert(0); /* Default colors for light mode */
+/* Styling for tablet devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .profile-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .image-paragraph-wrapper {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .profile-picture {
+        width: 200px;
+    }
+
+    .profile-content {
+        padding-left: 20px;
+        text-align: left;
+    }
 }
 
-/* Ensure footer sticks to the bottom */
-footer {
-    text-align: center;
-    padding: 0.5em 0;
-    font-size: 0.8em; /* Make footer text smaller */
+/* Larger desktop screens */
+@media (min-width: 1025px) {
+    .profile-container {
+        max-width: 1200px;
+    }
+
+    .profile-picture {
+        width: 240px;
+    }
 }
 
-/* Page transition effect */
-main {
-    flex: 1; /* Pushes footer to the bottom */
-    padding: 2em;
-    max-width: 800px;
-    margin: 0 auto;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+/* Hyperlink colors for visited links */
+a:visited {
+    color: #007acc; /* Reset to original color */
 }
 
-body.loaded main {
-    opacity: 1;
+.cv-container iframe {
+    width: 100%;
+    height: 500px; /* Adjust this height as needed */
 }
 
-/* Dark and light theme styles */
-[data-theme='dark'] {
-    background-color: #333;
-    color: #f1f1f1;
+@media screen and (max-width: 768px) {
+    .cv-container iframe {
+        height: 400px; /* Smaller height for mobile screens */
+    }
 }
 
-[data-theme='dark'] header, [data-theme='dark'] footer {
-    background-color: #444;
-}
-
-[data-theme='dark'] nav a {
-    color: #4CAF50;
-}
-
-[data-theme='light'] {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-[data-theme='light'] header, [data-theme='light'] footer {
-    background-color: #4CAF50;
-    color: white;
-}
-
-[data-theme='light'] nav a {
-    color: #4CAF50;
-}
-
-/* Header styling */
-header {
-    text-align: center;
-    padding: 1em 0;
-}
-
-/* Navigation styling */
-nav {
-    text-align: center;
-    margin: 1em 0;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-}
-
-nav a:hover {
-    color: #f11717; /* Change this to any color you like */
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 0.5em 0;
-    font-size: 0.8em; /* Make footer text smaller */
-}
-
-/* Emphasized text styling (for project dates) */
-em {
-    color: #666;
-    font-style: normal;
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 15px; /* Add bottom margin for spacing */
-    font-size: 0.9em;
+@media screen and (max-width: 480px) {
+    .cv-container iframe {
+        height: 300px; /* Further adjustment for smaller mobile devices */
+    }
 }
