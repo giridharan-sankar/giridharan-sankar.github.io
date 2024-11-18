@@ -1,182 +1,38 @@
-/* Base styling for the body, using Helvetica */
 body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #ffffff;
+    color: #000000;
     line-height: 1.6;
 }
 
-/* General container settings */
-.profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+header, footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+main {
     padding: 20px;
+    max-width: 800px;
     margin: 0 auto;
-    max-width: 1000px;
 }
 
-/* Styling the profile image */
-.profile-picture {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-/* Wrapper for image and first paragraph */
-.image-paragraph-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-}
-
-/* Style for content next to the profile picture */
-.profile-content {
-    max-width: 100%;
-    padding-left: 20px;
-}
-
-/* Styling h2 headers */
-h2 {
+h1, h2 {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: normal;
+    margin-bottom: 1rem;
 }
 
-/* General paragraph styling */
-p {
+p, li {
     font-size: 1rem;
-    margin-bottom: 1.2rem;
-    text-align: justify;
 }
 
-/* Link styling */
-a, a:visited {
-    color: #007acc;
+a {
+    color: #0000ff;
     text-decoration: none;
 }
 
 a:hover {
-    color: #005f99;
     text-decoration: underline;
-}
-
-/* Social media links */
-.social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.social-links img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-.social-links a {
-    transition: transform 0.2s ease, margin-right 0.2s ease;
-}
-
-.social-links a:hover {
-    transform: scale(1.1);
-    margin-right: 12px; /* Prevent overlap */
-}
-
-/* Making the page responsive */
-@media (max-width: 767px) {
-    .profile-container {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .image-paragraph-wrapper {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .profile-picture {
-        margin-bottom: 15px;
-        width: 180px;
-    }
-
-    .profile-content {
-        padding: 0;
-        text-align: center;
-    }
-
-    p {
-        padding: 0 15px;
-        text-align: left; /* Align text to the left on mobile */
-    }
-
-    h2 {
-        text-align: center;
-    }
-
-    .social-links {
-        margin-top: 10px;
-    }
-}
-
-/* Styling for tablet devices */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .profile-container {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .image-paragraph-wrapper {
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
-    .profile-picture {
-        width: 200px;
-    }
-
-    .profile-content {
-        padding-left: 20px;
-        text-align: left;
-    }
-}
-
-/* Larger desktop screens */
-@media (min-width: 1025px) {
-    .profile-container {
-        max-width: 1200px;
-    }
-
-    .profile-picture {
-        width: 240px;
-    }
-}
-
-/* Hyperlink colors for visited links */
-a:visited {
-    color: #007acc; /* Reset to original color */
-}
-
-/* CV iframe styling */
-.cv-container iframe {
-    width: 100%;
-    height: 50vh; /* 50% of viewport height */
-}
-
-@media screen and (max-width: 768px) {
-    .cv-container iframe {
-        height: 40vh; /* Smaller height for mobile screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .cv-container iframe {
-        height: 30vh; /* Further adjustment for smaller mobile devices */
-    }
 }
