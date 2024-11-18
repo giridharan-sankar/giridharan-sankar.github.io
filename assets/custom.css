@@ -1,38 +1,167 @@
-body {
-    font-family: 'Helvetica', sans-serif;
+/* General styling for the website */
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #000000;
-    line-height: 1.6;
+    font-family: 'Roboto', Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background and color transitions */
 }
 
-header, footer {
+/* Wrapper to ensure footer sticks to the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container for profile image and content */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px; /* Add margin for spacing around the container */
+}
+
+/* Image and paragraph wrapper */
+.image-paragraph-wrapper {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    margin-bottom: 20px; /* Space below the image-text wrapper */
+}
+
+/* Profile picture styling */
+.profile-picture {
+    border-radius: 50%;
+    width: 234px; /* Increase size of image */
+    height: 234px; /* Increase size of image */
+    object-fit: cover;
+    margin-right: 20px; /* Space between image and text */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+/* Profile text styling */
+.profile-text {
+    flex: 1; /* Allow text to take up the remaining space */
+}
+
+/* Content styling */
+.profile-text h2 {
+    margin-top: 0;
+}
+
+/* Social links styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0; /* Space above the footer */
+}
+
+.social-links a {
+    margin: 0 15px; /* Increased margin for spacing */
+    display: inline-block;
+}
+
+/* SVG icons */
+.social-links img {
+    width: 32px; /* Increase size of icons */
+    height: 32px; /* Increase size of icons */
+    transition: filter 0.3s ease; /* Smooth color transition */
+}
+
+/* Dark mode icon colors */
+[data-theme='dark'] .social-links img {
+    filter: invert(1); /* Invert colors for dark mode */
+}
+
+/* Light mode icon colors */
+[data-theme='light'] .social-links img {
+    filter: invert(0); /* Default colors for light mode */
+}
+
+/* Ensure footer sticks to the bottom */
+footer {
     text-align: center;
-    margin: 20px 0;
+    padding: 0.5em 0;
+    font-size: 0.8em; /* Make footer text smaller */
 }
 
+/* Page transition effect */
 main {
-    padding: 20px;
+    flex: 1; /* Pushes footer to the bottom */
+    padding: 2em;
     max-width: 800px;
     margin: 0 auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
-h1, h2 {
-    font-size: 2rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
+body.loaded main {
+    opacity: 1;
 }
 
-p, li {
-    font-size: 1rem;
+/* Dark and light theme styles */
+[data-theme='dark'] {
+    background-color: #333;
+    color: #f1f1f1;
 }
 
-a {
-    color: #0000ff;
+[data-theme='dark'] header, [data-theme='dark'] footer {
+    background-color: #444;
+}
+
+[data-theme='dark'] nav a {
+    color: #4CAF50;
+}
+
+[data-theme='light'] {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+[data-theme='light'] header, [data-theme='light'] footer {
+    background-color: #4CAF50;
+    color: white;
+}
+
+[data-theme='light'] nav a {
+    color: #4CAF50;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Navigation styling */
+nav {
+    text-align: center;
+    margin: 1em 0;
+}
+
+nav a {
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
-a:hover {
-    text-decoration: underline;
+nav a:hover {
+    color: #f11717; /* Change this to any color you like */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 0.5em 0;
+    font-size: 0.8em; /* Make footer text smaller */
+}
+
+/* Emphasized text styling (for project dates) */
+em {
+    color: #666;
+    font-style: normal;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px; /* Add bottom margin for spacing */
+    font-size: 0.9em;
 }

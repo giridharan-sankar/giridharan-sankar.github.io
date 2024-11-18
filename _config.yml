@@ -1,4 +1,7 @@
 title: Giridharan Sankar
-description: Physics student at IISER Pune.
-baseurl: ""
-url: "https://giridharan-sankar.github.io"
+email: giridharan.s@students.iiserpune.ac.in
+description: >
+  Physics student at IISER Pune. Interested in astrophysics, exoplanetary atmospheres, and star formation theory.
+baseurl: "" # Leave empty for GitHub Pages root
+url: "https://giridharan-sankar.github.io" # Your GitHub Pages URL
+theme: jekyll-theme-minimal

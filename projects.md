@@ -2,21 +2,24 @@
 layout: default
 title: Projects
 ---
-## Research Projects
 
-### Master's Thesis
-- Researching outflows and jets of young stellar objects (YSOs) using ALMA and JWST datacubes.
-- Aim: To identify jet-outflow morphologies and study systems using a unified outflow-jet bubble model.
-
-### Protostellar Jets and Outflows
-- Investigated molecular CO outflow morphology of DG Tau B under Dr. Hsien Shang's group at ASIAA, Taipei.
-- Utilized ALMA data and tools like CARTA and Tomviz for visualization and analysis.
-
-### Radiative Transfer Interface for Climate Models
-- Worked with Dr. Joy Merwin Monteiro at IISER Pune to interface the radiative transfer code SOCRATES-RF with Python-based modeling toolkit climt.
-- Learned Fortran90, Python, and C++ for project implementation.
-
-### Exoplanetary Atmospheres
-- Conducted atmospheric retrieval studies for WASP-39b using petitRADTRANS with synthetic JWST NIRSpec data, under Dr. Jayesh Goyal at NISER Bhubaneshwar.
-
-[CV](assets/cv/CV.pdf)
+<main>
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <strong>Protostellar outflows:</strong> Worked with Dr. Hsien Shang's group from the Institute of Astronomy and Astrophysics, Academia Sinica, Taipei. My objective was to understand the morphology of the molecular CO outflow of the young stellar object (YSO) DG Tau B, by generating channel maps, integrated intensity maps, etc. Also became comfortable with image cubes and the image cube processing tool CARTA.
+            <br>
+            <em>July 2023 - April 2024</em>
+        </li>
+        <li>
+            <strong>Radiative Transfer Interface:</strong> Worked with Dr. Joy Monteiro from IISER Pune to create a working interface between the Fortran90 based radiative transfer code SOCRATES-RF and the Python based climate modeling toolkit CLiMT. I was able to make the interface work for simple scenarios, and my colleague is currently working on expanding the interface to include clouds and make the models work for other exoplanets as well.
+            <br>
+            <em>Dec 2022 - May 2024</em>
+        </li>
+        <li>
+            <strong>Understanding exoplanetary atmospheres:</strong> With Dr. Jayesh Goyal, NISER Bhubaneshwar, I worked to understand the idea behind transmission spectroscopy used in detecting exoplanets and the idea of inverse theory and parameter estimation employed to find the atmospheric characteristics of the planet under consideration.
+            <br>
+            <em>May 2022 - Sep 2022</em>
+        </li>
+    </ul>
+</main>

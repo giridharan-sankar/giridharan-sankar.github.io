@@ -5,33 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | escape }}</title>
     <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}"> <!-- Include the theme stylesheet -->
+    <link rel="icon" href="{{ '/assets/images/planet.png' | relative_url }}" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script>
+        // Apply theme preference early to prevent flash
+        (function() {
+            const theme = localStorage.getItem('theme');
+            if (theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+            }
+        })();
+    </script>
 </head>
 <body>
     <header>
         <h1>Giridharan Sankar</h1>
-        <nav>
-            <ul>
-                <li><a href="{{ '/index.md' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/projects.md' | relative_url }}">Projects</a></li>
-            </ul>
-        </nav>
+        <p>Physics | IISER Pune</p>
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <span id="theme-icon">🌞</span> <!-- Default icon -->
+        </button>
     </header>
+    <nav>
+        <a href="{{ '/' | absolute_url }}">Home</a>
+        <a href="{{ '/projects' | absolute_url }}">Projects</a>
+        <a href="{{ '/assets/cv/CV.pdf' | absolute_url }}" target="_blank">CV</a>
+    </nav>
     <main>
         {{ content }}
     </main>
     <footer>
-        <p>&copy; 2024 Giridharan Sankar</p>
-        <p>Contact: 
-            <a href="mailto:giriss.astro7@gmail.com">
-                <img src="{{ '/assets/icons/gmail.svg' | relative_url }}" alt="Gmail" width="20" height="20">
-            </a> |
-            <a href="https://twitter.com/miniidliw" target="_blank">
-                <img src="{{ '/assets/icons/twitter.svg' | relative_url }}" alt="Twitter" width="20" height="20">
-            </a> |
-            <a href="https://github.com/giridharan-sankar" target="_blank">
-                <img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="GitHub" width="20" height="20">
-            </a>
-        </p>
+        <p>&copy; 2024 Giridharan Sankar. All rights reserved.</p>
     </footer>
+    <script src="{{ "/assets/theme-toggle.js" | relative_url }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
 </body>
 </html>
