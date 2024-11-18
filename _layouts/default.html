@@ -9,12 +9,23 @@
 <body>
     <header>
         <h1>Giridharan Sankar</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ '/index.md' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/projects.md' | relative_url }}">Projects</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         {{ content }}
     </main>
     <footer>
         <p>&copy; 2024 Giridharan Sankar</p>
+        <p>Contact: 
+            <a href="mailto:giriss.astro7@gmail.com">Email</a> |
+            <a href="https://twitter.com/miniidliw" target="_blank">Twitter</a> |
+            <a href="https://github.com/giridharan-sankar" target="_blank">GitHub</a>
+        </p>
     </footer>
 </body>
 </html>
