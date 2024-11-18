@@ -22,6 +22,6 @@ title: Projects
         </li>
     </ul>
     <div class="cv-container">
-        <iframe src="{{ '/assets/cv/CV.pdf' | relative_url }}" title="CV" width="100%" height="500px" class="scrollable-iframe"></iframe>
+        <p>Download my CV: <a href="{{ '/assets/cv/CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">CV.pdf</a></p>
     </div>
 </main>
