@@ -1,6 +1,6 @@
 /* Base styling for the body, using Helvetica */
 body {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
@@ -22,7 +22,6 @@ body {
 /* Styling the profile image */
 .profile-picture {
     max-width: 100%;
-    width: 200px; /* Adjust size to make it responsive */
     height: auto;
     border-radius: 50%;
     margin-bottom: 20px;
@@ -57,7 +56,7 @@ p {
 }
 
 /* Link styling */
-a {
+a, a:visited {
     color: #007acc;
     text-decoration: none;
 }
@@ -81,11 +80,12 @@ a:hover {
 }
 
 .social-links a {
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, margin-right 0.2s ease;
 }
 
 .social-links a:hover {
     transform: scale(1.1);
+    margin-right: 12px; /* Prevent overlap */
 }
 
 /* Making the page responsive */
@@ -113,7 +113,7 @@ a:hover {
 
     p {
         padding: 0 15px;
-        text-align: justify;
+        text-align: left; /* Align text to the left on mobile */
     }
 
     h2 {
@@ -163,19 +163,20 @@ a:visited {
     color: #007acc; /* Reset to original color */
 }
 
+/* CV iframe styling */
 .cv-container iframe {
     width: 100%;
-    height: 500px; /* Adjust this height as needed */
+    height: 50vh; /* 50% of viewport height */
 }
 
 @media screen and (max-width: 768px) {
     .cv-container iframe {
-        height: 400px; /* Smaller height for mobile screens */
+        height: 40vh; /* Smaller height for mobile screens */
     }
 }
 
 @media screen and (max-width: 480px) {
     .cv-container iframe {
-        height: 300px; /* Further adjustment for smaller mobile devices */
+        height: 30vh; /* Further adjustment for smaller mobile devices */
     }
 }

@@ -2,7 +2,6 @@
 layout: default
 title: Projects
 ---
-
 <main>
     <h2>Projects</h2>
     <ul>
@@ -23,6 +22,6 @@ title: Projects
         </li>
     </ul>
     <div class="cv-container">
-            <iframe src="{{ '/assets/cv/CV.pdf' | relative_url }}" title="CV" width="100%" height="500px" style="border: none;"></iframe>
+        <iframe src="{{ '/assets/cv/CV.pdf' | relative_url }}" title="CV" width="100%" height="500px" class="scrollable-iframe"></iframe>
     </div>
 </main>

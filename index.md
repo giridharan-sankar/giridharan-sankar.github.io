@@ -2,7 +2,6 @@
 layout: default
 title: Home
 ---
-
 <main>
     <div class="profile-container">
         <div class="image-paragraph-wrapper">
