@@ -4,22 +4,21 @@ title: Projects
 ---
 
 <main>
-    <h2>Projects</h2>
+    <h2>Research Projects</h2>
     <ul>
         <li>
-            <strong>Protostellar outflows:</strong> Worked with Dr. Hsien Shang's group from the Institute of Astronomy and Astrophysics, Academia Sinica, Taipei. My objective was to understand the morphology of the molecular CO outflow of the young stellar object (YSO) DG Tau B, by generating channel maps, integrated intensity maps, etc. Also became comfortable with image cubes and the image cube processing tool CARTA.
+            <strong>Protostellar outflows (part of my MS thesis):</strong> <p>Worked with Dr. Hsien Shang from the Institute of Astronomy and Astrophysics, Academia Sinica (ASIAA). Conducted analysis of protostellar outflows using ALMA and JWST telescope data at Academia Sinica Institute of Astronomy and Astrophysics, Taiwan. Developed data processing pipelines using Python and specialized astronomy software to study molecular outflows and jet structures. The project involved complex data cube analysis, spectral processing, and multi-wavelength observations to understand young stellar object formation mechanisms.</p>
+            <p>Created an advanced data processing workflow combining observations from ALMA (Atacama Large Millimeter Array) and JWST (James Webb Space Telescope). Implemented sophisticated continuum subtraction techniques and developed custom Python scripts for merging complex astronomical datasets. Successfully resolved technical challenges in combining different field-of-views and managing varying spectral resolutions, resulting in high-quality integrated data products for scientific analysis.</p>
+            <p>Developed a comprehensive framework for analyzing spectroscopic data from NIRSpec-IFU, focusing on emission line identification and characterization. The project involved creating channel maps and position-velocity diagrams, cataloging various atomic and molecular emissions, and implementing velocity transformation algorithms. Successfully identified and analyzed multiple emission species including [Fe II], [S II], and molecular hydrogen, contributing to our understanding of protostellar jet dynamics.</p>
             <br>
-            <em>July 2023 - April 2024</em>
+            <em>July 2023 - </em>
         </li>
         <li>
-            <strong>Radiative Transfer Interface:</strong> Worked with Dr. Joy Monteiro from IISER Pune to create a working interface between the Fortran90 based radiative transfer code SOCRATES-RF and the Python based climate modeling toolkit CLiMT. I was able to make the interface work for simple scenarios, and my colleague is currently working on expanding the interface to include clouds and make the models work for other exoplanets as well.
+            <strong>Radiative Transfer Interface:</strong> <p>Worked with Dr. Joy Monteiro, IISER Pune. The project involved building a connection between FORTRAN and Python using CFFI (C Foreign Function Interface), implementing full-field gas modeling and aerosol integration, and developing support for multi-dimensional array processing. I successfully created compatibility with climt's state generation system, making the tool more versatile for various atmospheric modeling scenarios.</p>
+            <p>To ensure reliability, I validated the interface against RRTMG (another state-of-the-art radiative transfer model) across multiple scenarios, including single time-step heating rates, basic radiative equilibrium, radiative equilibrium with slab surface heating, realistic atmospheric profiles, and full radiative-convective equilibrium modeling. The results showed excellent agreement with RRTMG, confirming the interface's reliability for climate modeling applications.</p>
+            <p>The project makes SOCRATES more accessible to the Python-based climate science community while maintaining its computational advantages. By enabling easier integration of SOCRATES into modern climate modeling workflows, the interface facilitates more flexible and comprehensive atmospheric studies. The project utilized FORTRAN, Python, CFFI, the SOCRATES Radiative Transfer Model, and climt (Climate Modeling Toolkit) to achieve these goals.</p>
             <br>
             <em>Dec 2022 - May 2024</em>
-        </li>
-        <li>
-            <strong>Understanding exoplanetary atmospheres:</strong> With Dr. Jayesh Goyal, NISER Bhubaneshwar, I worked to understand the idea behind transmission spectroscopy used in detecting exoplanets and the idea of inverse theory and parameter estimation employed to find the atmospheric characteristics of the planet under consideration.
-            <br>
-            <em>May 2022 - Sep 2022</em>
         </li>
     </ul>
 </main>
